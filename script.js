@@ -49,9 +49,17 @@ $(function () {
         }
     }
 
+    function storeActivities() {
+        localStorage.setItem("activities", JSON.stringify(activities));
+    
+    }
+
+
     renderItems()
 
   });
+
+
   
 //   <div id="hour-9" class="row time-block past">
 //         <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
